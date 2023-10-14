@@ -16,15 +16,14 @@ spec:
         app: order
     spec:
       containers:
-      - name: order
-        image: shaikkhajaibrahim/orderapp:dev-1
-        ports:
-        - containerPort: 80
-        resources:
-          requests:
-            cpu: 100m
-            memory: "64Mi"
-          limits:
-            cpu: 200m
-            memory: "128Mi"
-
+        - name: order
+          image: shaikkhajaibrahim/orderapp:dev_7
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: "64Mi"
+            limits:
+              cpu: 200m
+              memory: "128Mi"
