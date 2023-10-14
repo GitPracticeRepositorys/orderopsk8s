@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: shaikkhajaibrahim/orderapp:dev_9
+          image: shaikkhajaibrahim/orderapp:dev_10
           ports:
             - containerPort: 80
           resources:
