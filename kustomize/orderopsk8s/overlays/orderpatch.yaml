@@ -1,0 +1,12 @@
+# orderpatch.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-deployment  # Replace with your deployment name
+spec:
+  template:
+    spec:
+      containers:
+      - name: order-container  # Replace with your container name
+        image: shivakrishna99/orderapp:new-image-tag
