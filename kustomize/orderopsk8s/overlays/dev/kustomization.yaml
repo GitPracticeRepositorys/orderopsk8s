@@ -4,7 +4,7 @@ resources:
 
 namespace: dev
 namePrefix: dev-
-labels:
-  - pairs:
-      env: dev
-      image: shivakrishna99/orderapp:dev_65
+spec:
+  - name: order
+  containers:
+        image: shivakrishna99/orderapp:dev_65
