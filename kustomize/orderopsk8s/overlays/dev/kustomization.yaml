@@ -1,10 +1,18 @@
----
+# overlays/dev/kustomization.yaml
+
 resources:
   - ../../base
 
 namespace: dev
 namePrefix: dev-
-spec:
-  - name: order
-  containers:
-        image: shivakrishna99/orderapp:dev_65
+
+commonLabels:
+  app: order
+
+patchesStrategicMerge:
+  - orderpatch.yaml  # Include any patches specific to dev environment
+
+# Add additional resources specific to dev environment if needed
+# - dev-specific-deployment.yaml
+# - dev-specific-service.yaml
+# ...
