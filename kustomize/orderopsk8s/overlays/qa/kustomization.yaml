@@ -8,4 +8,4 @@ namePrefix: uat-
 labels:
   - pairs:
       env: uat
-      version: "0.0.1"
+      image: shivakrishna99/orderapp:dev_54
