@@ -1,11 +1,18 @@
----
+# overlays/prod/kustomization.yaml
+
 resources:
   - ../../base
 
 namespace: uat
 namePrefix: uat-
 
-labels:
-  - pairs:
-      env: uat
-      image: shivakrishna99/orderapp:dev_76
+commonLabels:
+  app: order
+
+patchesStrategicMerge:
+  - orderpatch.yaml  # Include any patches specific to prod environment
+
+# Add additional resources specific to prod environment if needed
+# - prod-specific-deployment.yaml
+# - prod-specific-service.yaml
+# ...
