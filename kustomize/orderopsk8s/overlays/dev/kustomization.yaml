@@ -1,15 +1,11 @@
-<<<<<<< HEAD
 # overlays/dev/kustomization.yaml
 
-=======
->>>>>>> 7502231 (Committing local changes)
 resources:
   - ../../base
 
 namespace: dev
 namePrefix: dev-
 
-<<<<<<< HEAD
 commonLabels:
   app: order
 
@@ -20,12 +16,3 @@ patchesStrategicMerge:
 # - dev-specific-deployment.yaml
 # - dev-specific-service.yaml
 # ...
-=======
-replicas:
-- name: order
-  count: 5
-
-images:
-- name: shivakrishna99/orderapp:dev_25
-  newName: shivakrishna99/orderapp:dev_72
->>>>>>> 7502231 (Committing local changes)

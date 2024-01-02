@@ -1,25 +1,12 @@
-<<<<<<< HEAD
 # orderpatch.yaml
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: order-deployment  # Replace with your deployment name
-=======
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: order-deployment
->>>>>>> 7502231 (Committing local changes)
 spec:
   template:
     spec:
       containers:
-<<<<<<< HEAD
       - name: order-container  # Replace with your container name
         image: shivakrishna99/orderapp:dev_54
-=======
-      - name: order-container
-        image: shivakrishna99/orderapp:new_image_tag
-
->>>>>>> 7502231 (Committing local changes)
