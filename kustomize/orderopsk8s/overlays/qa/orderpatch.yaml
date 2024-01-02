@@ -8,6 +8,6 @@ spec:
   template:
     spec:
       containers:
-      - name: order-container  # Replace with your container name
+      - name: order  # Replace with your container name
         image: shivakrishna99/orderapp:dev_65
 
