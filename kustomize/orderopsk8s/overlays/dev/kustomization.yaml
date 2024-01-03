@@ -1,4 +1,4 @@
-# overlays/dev/kustomization.yaml
+# kustomization.yaml
 
 resources:
   - ../../base
@@ -10,9 +10,4 @@ commonLabels:
   app: order
 
 patchesStrategicMerge:
-  - orderpatch.yaml  # Include any patches specific to dev environment
-
-# Add additional resources specific to dev environment if needed
-# - dev-specific-deployment.yaml
-# - dev-specific-service.yaml
-# ...
+  - orderpatch.yaml  # Include any patches specific to the dev environment
