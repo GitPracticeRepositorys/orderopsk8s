@@ -9,4 +9,4 @@ spec:
     spec:
       containers:
       - name: order  # Replace with your container name
-        image: shivakrishna99/orderapp:dev_54
+        image: shivakrishna99/orderapp:dev_${BUILD_NUMBER}
